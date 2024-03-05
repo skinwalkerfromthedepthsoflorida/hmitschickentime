@@ -5916,10 +5916,10 @@ MainHUD.Open.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 MainHUD.Open.Position = UDim2.new(0.00722877821, 0, 0.47334367, 0)
 MainHUD.Open.Size = UDim2.new(0.0996111184, 0, 0.0516776033, 0)
 MainHUD.Open.AutoButtonColor = false
-MainHUD.Open.Font = Enum.Font.Unknown
+MainHUD.Open.Font = Enum.Font.Arcade
 MainHUD.Open.Text = "Open"
 MainHUD.Open.TextColor3 = Color3.fromRGB(255, 255, 255)
-MainHUD.Open.TextSize = 40.000
+MainHUD.Open.TextSize = 35.000
 MainHUD.Open.TextWrapped = true
 
 MainHUD.UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
@@ -5933,6 +5933,7 @@ MainHUD.UICorner_12.Parent = MainHUD.Open
 
 local function AMGPB_fake_script() -- MainHUD.MainHUD.Client 
 	local script = Instance.new('LocalScript', MainHUD.MainHUD)
+    script.Name = "Client"
 
 	local Player = game:GetService("Players").LocalPlayer
 	local TweenService = game:GetService("TweenService")
