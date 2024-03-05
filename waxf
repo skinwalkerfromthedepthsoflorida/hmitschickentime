@@ -5952,10 +5952,10 @@ Converted["_DinoName227"].ZIndex = 2
 Converted["_DinoName227"].Name = "DinoName"
 Converted["_DinoName227"].Parent = Converted["_Acrocanthosaurus1"]
 
-Converted["_Open"].Font = Enum.Font.Unknown
+Converted["_Open"].Font = Enum.Font.Arcade
 Converted["_Open"].Text = "Open"
 Converted["_Open"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Open"].TextSize = 40
+Converted["_Open"].TextSize = 36
 Converted["_Open"].TextWrapped = true
 Converted["_Open"].AutoButtonColor = false
 Converted["_Open"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000000819563866, 50.000000819563866)
@@ -6205,4 +6205,4 @@ local function KNRDYP_fake_script() -- Fake Script: StarterGui.MainHUD.Client
 	end)
 end
 
-coroutine.wrap(KNRDYP_fake_script)()-- Please leave these comments in and leave credit, it took me a while to make this
+coroutine.wrap(KNRDYP_fake_script)()
