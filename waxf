@@ -511,7 +511,7 @@ local MainHUD = {
 }
 
 MainHUD.MainHUD.Name = "MainHUD"
-MainHUD.MainHUD.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainHUD.MainHUD.Parent = game.StarterGui
 MainHUD.MainHUD.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainHUD.Frame.Parent = MainHUD.MainHUD
@@ -5908,7 +5908,7 @@ MainHUD.DinoName_114.TextScaled = true
 MainHUD.DinoName_114.TextSize = 14.000
 MainHUD.DinoName_114.TextWrapped = true
 
-MainHUD.Configuration.Parent = game.Players.LocalPlayer.PlayerGui:WaitForChild("MainHUD").Client
+MainHUD.Configuration.Parent = game.StarterGui:WaitForChild("MainHUD").Client
 
 MainHUD.Open.Name = "Open"
 MainHUD.Open.Parent = MainHUD.MainHUD
@@ -5938,7 +5938,7 @@ local function AMGPB_fake_script() -- MainHUD.MainHUD.Client
 	local TweenService = game:GetService("TweenService")
 	local UserInputService = game:GetService("UserInputService")
 	
-	local MainHUD = Player.PlayerGui:WaitForChild("MainHUD")
+	local MainHUD = game.StarterGui:WaitForChild("MainHUD")
 	local Frame = MainHUD.Frame
 	local TopFrame = Frame.TopFrame
 	local LocalFrame = Frame.LocalFrame
