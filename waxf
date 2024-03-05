@@ -5908,7 +5908,7 @@ MainHUD.DinoName_114.TextScaled = true
 MainHUD.DinoName_114.TextSize = 14.000
 MainHUD.DinoName_114.TextWrapped = true
 
-MainHUD.Configuration.Parent = game.StarterGui:WaitForChild("MainHUD").Client
+MainHUD.Configuration.Parent = game.StarterGui:WaitForChild("MainHUD")
 
 MainHUD.Open.Name = "Open"
 MainHUD.Open.Parent = MainHUD.MainHUD
