@@ -5908,8 +5908,6 @@ MainHUD.DinoName_114.TextScaled = true
 MainHUD.DinoName_114.TextSize = 14.000
 MainHUD.DinoName_114.TextWrapped = true
 
-MainHUD.Configuration.Parent = game.Players.LocalPlayer.PlayerGui:WaitForChild("MainHUD").Client
-
 MainHUD.Open.Name = "Open"
 MainHUD.Open.Parent = MainHUD.MainHUD
 MainHUD.Open.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
@@ -5934,6 +5932,8 @@ MainHUD.UICorner_12.Parent = MainHUD.Open
 local function AMGPB_fake_script() -- MainHUD.MainHUD.Client 
 	local script = Instance.new('LocalScript', MainHUD.MainHUD)
     script.Name = "Client"
+
+	MainHUD.Configuration.Parent = game.Players.LocalPlayer.PlayerGui:WaitForChild("MainHUD").Client
 
 	local Player = game:GetService("Players").LocalPlayer
 	local TweenService = game:GetService("TweenService")
