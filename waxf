@@ -5,6 +5,8 @@ local MainHUD = {
 	BabyDinoList = Instance.new("ScrollingFrame"),
 	UIListLayout = Instance.new("UIListLayout"),
 	UICorner = Instance.new("UICorner"),
+    selectedbabyvalue = Instance.new("StringValue"),
+	selectedeldervalue = Instance.new("StringValue"),
 	dsa = Instance.new("ImageButton"),
 	DinoName = Instance.new("TextLabel"),
 	dsa_2 = Instance.new("ImageButton"),
@@ -521,6 +523,7 @@ MainHUD.Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainHUD.Frame.BorderSizePixel = 0
 MainHUD.Frame.Position = UDim2.new(0.36311391, 0, 0.26566416, 0)
 MainHUD.Frame.Size = UDim2.new(0.306165099, 0, 0.412280709, 0)
+MainHUD.Frame.Visible = false
 
 MainHUD.ElderFrame.Name = "ElderFrame"
 MainHUD.ElderFrame.Parent = MainHUD.Frame
